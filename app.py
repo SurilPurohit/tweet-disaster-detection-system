@@ -38,8 +38,7 @@ menu = st.sidebar.radio("Menu",["Home",
                                 "Logistic Regression",
                                 "Random Forest",
                                 "Ridge Classifier",
-                                "XG Boost",
-                                "About"])
+                                "XG Boost"])
 
 #  Conditional statements for the WebApp sidebar based on whether a new model or an existing model is selected 
 if menu=="Home":
@@ -212,10 +211,3 @@ elif menu=="XG Boost":
             prediction(tweet, loaded_model)
         else:
             st.error('Please enter a tweet')
-# ========================================================================================================
-elif menu=="About":
-    # Display the about us page
-    with open('html_pages/About_us.html', 'rb') as f:
-        aboutus = f.read()
-        aboutus = aboutus.decode("utf-8")
-    st.markdown(aboutus, unsafe_allow_html=True)
