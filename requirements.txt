@@ -1,0 +1,8 @@
+gensim
+nltk
+numpy
+wordcloud
+xgboost
+scikit-learn
+catboost
+scipy ==1.10.0
